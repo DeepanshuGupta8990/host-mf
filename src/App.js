@@ -79,6 +79,7 @@ const App = () => {
       >
         <h1>Product Listing</h1>
         <h2>Remote Counter: {count}</h2>
+        <FrictionData />
         <button onClick={() => dispatch(increment())}>Increment</button>
         <button onClick={() => dispatch(decrement())}>Decrement</button>
         <nav>
