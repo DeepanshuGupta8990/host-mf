@@ -27,6 +27,14 @@
             presets: ["@babel/preset-react"],
           },
         },
+        {
+          test: /\.css$/i,
+          use: [
+            'style-loader',
+            'css-loader',
+            'postcss-loader'
+          ],
+        },
       ],
     },
     plugins: [
@@ -34,6 +42,7 @@
         name: "app1",
         remotes: {
           app2: "app2@http://localhost:3002/remoteEntry.js",
+          // app3: "app3@http://localhost:3003/remoteEntry.js",
         },
         shared: {'react': {singleton: true}, "react-dom": {singleton: true}, "react-router-dom": {singleton: true}},
       }),
