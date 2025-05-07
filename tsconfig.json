@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",        // or "react" if using React 17
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true
+  }
+}
